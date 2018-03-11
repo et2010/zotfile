@@ -104,7 +104,7 @@ var OpenPDFExtension = {
                 else
                     args = [path];
                 // run process
-                Zotero.Utilities.Internal.exec(cmd.join('-'), args);
+                Zotero.Utilities.Internal.exec(cmd.trim(), args);
             }
         }
     }.bind(Zotero.ZotFile)),
